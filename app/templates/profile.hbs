@@ -1,0 +1,60 @@
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12" >
+
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{current-user.profile.first_name}} {{current-user.profile.last_name}}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 " align="center">
+                            <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive">
+                        </div>
+
+                        <div class=" col-md-9 col-lg-9 ">
+                            <table class="table table-user-information">
+                                <tbody>
+                                <tr>
+                                    <td>ID user:</td>
+                                    <td>{{current-user.profile.id}}</td>
+                                </tr>
+                                <tr>
+                                    <td>First name</td>
+                                    <td>{{current-user.profile.first_name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Last name</td>
+                                    <td>{{current-user.profile.last_name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>{{current-user.profile.email}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone:</td>
+                                    <td>{{current-user.profile.phone_number}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Date:</td>
+                                    <td>{{current-user.profile.created_at}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+
+                    {{#link-to 'settings' class='btn btn-primary'}}<i class="glyphicon glyphicon-cog"></i>{{/link-to}}
+
+                    <div class="pull-right">
+                        <a class="btn btn-danger" {{action 'logout'}}><i class="glyphicon glyphicon-log-out"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>

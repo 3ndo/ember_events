@@ -1,0 +1,21 @@
+<h3>Edit profile</h3>
+<form {{action 'edit_profile' password email first_name last_name on='submit'}}>
+    <div class="form-group">
+        {{input value=first_name  class='form-control' placeholder='First name'}}
+    </div>
+    <div class="form-group">
+        {{input value=last_name class='form-control' placeholder='Last name'}}
+    </div>
+    <div class="form-group">
+        {{input value=email class='form-control' placeholder='Your email'}}
+    </div>
+    <div class="form-group">
+        {{input value=phone class='form-control' placeholder='Your phone'}}
+    </div>
+    <div class="form-group">
+        {{input value=password type='password' class='form-control' placeholder='New password'}}
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary">Save</button>
+    </div>
+</form>
